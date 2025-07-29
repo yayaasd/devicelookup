@@ -1,0 +1,8 @@
+<?php
+return [
+	'host' => 'xxx',
+	'username' => 'xxx',
+	'password' => 'xxx',
+	'domainsuffix' => 'domain.local'
+	]
+?>

@@ -1,0 +1,25 @@
+
+20.02.2025
+- Bug MAC-Adresse im Format XXXXXXXXXXXX behoben
+
+================================
+
+31.10.2024
+- VLAN ID mit VLAN Name ergänzt
+
+================================
+
+21.10.2024
+- Mac-Adressen können nun in folgenden Formaten sein:
+	XXXXXXXXXXXX
+	XXXX.XXXX.XXXX  <-- Cisco Format hinzugefügt
+	XX:XX:XX:XX:XX:XX
+	XX-XX-XX-XX-XX-XX
+- Leerzeichen bei Eingabe werden automatisch bereinigt
+- Warnung für Daten aus Endsysteme eingefügt
+- Blockierzeit nach Abfrage = 7sec, damit Endsysteme nicht überlastet werden
+
+================================
+
+21.10.2024
+- Suchbare Hostnamen angepasst
