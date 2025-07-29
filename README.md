@@ -1,17 +1,30 @@
-# Tool for Device Lookup @Prime and @CatalystCenter
-with this tool, the User doesn't need GUI Access to Prime or Catalyst Center anymore. Specially external contractors can be given "access" to information without let them access your management systems.
+## Tool for Device Lookup @Cisco Prime and @Cisco CatalystCenter
+Using this tool, the User doesn't need GUI Access to Prime or Catalyst Center anymore. Specially external contractors can be given "access" to information without let them access your management systems or your core network.
 
-You can check the code and activate/deactivate the lan/wifi part as you like. The given state is:
-LAN is from Prime
-WIFI is from Catalystcenter
+You can check the code and activate/deactivate the lan/wifi part as you like. The given state is:  
+LAN is from Prime  
+WIFI is from Catalystcenter  
 
-#### Example
+#### This is what it looks like:
 ![image](./resources/example.png)
 
+No fancy GUI nor beautifier - just a small tool for providing data ;-)
 
-# config guideline
 
-## vHost Config
+## Compatibility
+For now the tested versions are:
+
+`Prime Infrastructure 3.10.5`  
+`Catalyst Center: 2.3.7.6 up to 2.3.7.9`
+
+
+future versions may be tested and updated, keep following.  
+
+
+
+## How-To
+
+### 1) vHost Config
 the vHost config should be:
 <details><summary>Click to expand</summary>
 
@@ -76,8 +89,8 @@ the vHost config should be:
 
 please make sure to adjust the path for the files and certificate.
 
-## Adjust the Naming Syntax of your devices
-to meet the naming syntax feel free to adjust the both files "getPrimeApiDevice" and "getCCApiDevice". The adjustment can be done within the preg_match:
+### 2) Adjust the Naming Syntax of your devices
+to meet the naming syntax feel free to adjust the both files "getPrimeApiDevice.php" and "getCCApiDevice.php". The adjustment can be done within the preg_match:
 ```
 // ADJUST THIS AS YOU NEED
 // DEVICE SYNTAX OF YOUR COMPANY
@@ -87,6 +100,7 @@ to meet the naming syntax feel free to adjust the both files "getPrimeApiDevice"
         }
 ```
 
-## Adjust the config files
-fill in your config information. There are two files (config = prime / configCC = CatalystCenter).
-Make sure you're using a dedicated API user with the needed rights/limitations
+
+### 3) adjust the config files
+fill in your config information. There are two files (config.php = prime / configCC.php = CatalystCenter).
+Make sure you're using a dedicated API user with the needed rights/limitations.  
