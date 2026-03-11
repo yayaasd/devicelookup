@@ -15,7 +15,7 @@ No fancy GUI nor beautifier - just a small tool for providing data ;-)
 For now the tested versions are:
 
 `Prime Infrastructure 3.10.5`  
-`Catalyst Center: 2.3.7.6 up to 2.3.7.9`
+`Catalyst Center: 2.3.7.6 up to 3.1.6`
 
 
 future versions may be tested and updated, keep following.  
